@@ -109,3 +109,45 @@ DELETE /reviews/{review_id}/ - Delete a specific review
 
 ## Feature Breakdown
 The backend for the Airbnb Clone project is designed to provide a robust and scalable foundation for managing user interactions, property listings, bookings, and payments. This backend will support various functionalities required to mimic the core features of Airbnb, ensuring a smooth experience for users and hosts.
+
+## API Security
+
+Securing the backend APIs is a critical part of the Airbnb Clone Project. Since the platform involves sensitive user information, payments, and bookings, strong security practices must be in place to protect both the system and its users.
+
+### Key Security Measures
+
+1. **Authentication**
+   - Use JWT (JSON Web Tokens) or OAuth2 to verify the identity of users.
+   - Ensures only registered users can access protected endpoints.
+
+2. **Authorization**
+   - Implement role-based access control (e.g., Admin, Host, Guest).
+   - Prevents unauthorized actions, such as guests modifying property listings.
+
+3. **Data Encryption**
+   - Use HTTPS (SSL/TLS) for secure data transmission.
+   - Store passwords using strong hashing algorithms (e.g., bcrypt).
+
+4. **Input Validation & Sanitization**
+   - Validate all incoming data to prevent SQL injection, XSS, and other attacks.
+   - Protects against malicious inputs that could compromise the database.
+
+5. **Rate Limiting & Throttling**
+   - Limit the number of requests per user/IP in a given timeframe.
+   - Protects against brute-force attacks and denial-of-service (DoS).
+
+6. **Error Handling & Logging**
+   - Avoid exposing sensitive details in API error messages.
+   - Maintain detailed logs for monitoring and auditing suspicious activities.
+
+---
+
+### Why Security is Crucial
+
+- **Protecting User Data:** Sensitive data such as personal details, IDs, and emails must remain confidential.  
+- **Securing Payments:** Payment details and transactions must be protected against interception or fraud.  
+- **Ensuring Trust:** Strong security builds user confidence in the platform.  
+- **Compliance:** Security measures ensure compliance with data protection laws (e.g., GDPR, PCI DSS).  
+- **System Reliability:** Security practices prevent downtime caused by malicious attacks.  
+
+---
