@@ -150,4 +150,29 @@ Securing the backend APIs is a critical part of the Airbnb Clone Project. Since 
 - **Compliance:** Security measures ensure compliance with data protection laws (e.g., GDPR, PCI DSS).  
 - **System Reliability:** Security practices prevent downtime caused by malicious attacks.  
 
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+**CI/CD (Continuous Integration and Continuous Deployment/Delivery)** is a development practice that automates the process of testing, building, and deploying applications.  
+- **Continuous Integration (CI):** Every time code is pushed, it is automatically tested and validated to ensure it integrates well with the existing codebase.  
+- **Continuous Deployment/Delivery (CD):** Once code passes all checks, it is automatically deployed to staging or production environments with minimal manual intervention.  
+
+---
+
+### Why is CI/CD Important?
+- **Faster Development Cycles:** Automates repetitive tasks, allowing developers to focus on building features.  
+- **Improved Code Quality:** Automated testing ensures bugs are caught early in the pipeline.  
+- **Reliability:** Reduces human error during deployment and ensures consistent environments.  
+- **Collaboration:** Supports smooth teamwork by integrating changes seamlessly.  
+- **Scalability:** Makes the project easier to scale and maintain over time.  
+
+---
+
+### Tools for CI/CD in this Project
+- **GitHub Actions:** Automates workflows such as running tests, linting code, and deploying applications.  
+- **Docker:** Ensures consistent development and deployment environments by containerizing the application.  
+- **(Optional) Cloud Providers:** AWS, Heroku, or similar services can be used for hosting and deployment.  
+
+---
+
 ---
